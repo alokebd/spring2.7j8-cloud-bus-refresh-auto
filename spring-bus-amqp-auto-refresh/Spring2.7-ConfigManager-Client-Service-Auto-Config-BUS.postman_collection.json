@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "fa50d5be-123f-49da-849e-97d8b46e97a9",
+		"name": "Spring2.7-ConfigManager-Client-Service-Auto-Config-BUS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33936986"
+	},
+	"item": [
+		{
+			"name": "Property Service (application-property)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Property Service values",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/values",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"values"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Payment Service (application-property)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8283",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8283"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Config Server Actuator",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/actuator/refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"actuator",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Config Server Actuator Bus Refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/actuator/busrefresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"actuator",
+						"busrefresh"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
